@@ -1,0 +1,14 @@
+<nav class="navbar navbar-expand navbar-dark bg-dark">
+    <a class="navbar-brand" href="/">NodeBlog</a>
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item  <% if(title=='Home'){ %> active <% } %>">
+        <a class="nav-link" href="/">Home</a>
+      </li>
+      <li class="nav-item <% if(title=='About'){ %> active <% } %>">
+        <a class="nav-link" href="/about">About</a>
+      </li>
+      <li class="nav-item <% if(title=='Create New Blog Post'){ %> active <% } %>">
+        <a class="nav-link" href="/blogs/create">Create</a>
+      </li>
+    </ul>
+  </nav>
