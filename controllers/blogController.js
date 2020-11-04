@@ -18,7 +18,10 @@ const blog_details = (req, res) => {
         .then( result => {
             res.render('blogs/details', { title:result.title, blog:result })
         })
-        .catch( err => console.log(err));
+        .catch( err => {
+            console.log(err);
+            res.render('404', { title:'404 - Page Not Found'} )
+        });
 }
 const blog_delete = (req, res) => {
     const id = req.params.id;
